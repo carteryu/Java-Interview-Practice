@@ -23,10 +23,10 @@ public void printTree(TreeNode root){
 		Iterator<TreeNode> iter = currentLevel.iterator();
 		while (iter.hasNext()) {
 			TreeNode currentNode = iter.next();
-			if (current.left != null){
+			if (currentNode.left != null){
 				nextLevel.add(currentNode.left);
 			}
-			if (current.right != null){
+			if (currentNode.right != null){
 				nextLevel.add(currentNode.right);
 			}
 			System.out.println(currentNode.value + " ")
