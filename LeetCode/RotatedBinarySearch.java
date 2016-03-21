@@ -14,7 +14,7 @@ int rotated_binary_search(int arr[], int key){
 	int high = arr.length - 1;
 
 	while(low <= high){
-		mid = low + ((high - low) / 2);
+		int mid = low + ((high - low) / 2);
 
 		//Condition 1
 		if (arr[mid] == key) return mid;
