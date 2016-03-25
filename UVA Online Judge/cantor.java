@@ -3,7 +3,7 @@
 import java.util.*;
 import java.io.*;
 
-public class cantor{
+public class Cantor{
 	public static void main(String[] args){
 		Scanner scan = new Scanner(System.in);
 		int n;

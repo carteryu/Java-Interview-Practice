@@ -3,7 +3,7 @@
 
 import java.util.*;
 import java.io.*;
-public class gold {
+public class GettingGold {
 	static int gp = 0;
 	static char[][] graph;
 	static boolean[][] visited;
