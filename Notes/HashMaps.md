@@ -14,7 +14,7 @@ where K and V are generics
 
 ## Useful Examples
 
-1. From a populated integer array called arr, map all the elements to its frequency:
+* From a populated integer array called arr, map all the elements to its frequency:
 
 ```
 HashMap<Integer, Integer> map = new HashMap<Integer, Integer>();
@@ -26,19 +26,19 @@ for(int num: arr){
     }
 }
 ```
-2. Iterate over a HashMap to find the largest integer value
+* Iterate over a HashMap to find the largest integer value
 
 ```
 int max = 0;
-    for(Map.Entry<Integer, Integer> entry: map.entrySet()){
-        max = Math.max(max, entry.getValue());
-    }
+for(Map.Entry<Integer, Integer> entry: map.entrySet()){
+    max = Math.max(max, entry.getValue());
+}
 ```
 
 ## Random trivia
 
-1. It's roughly the same as hash table except that it's unsynchronized and permits nulls (both null value and null key)
-2. Keys and values are meant to be randomized. If you care about values being sorted, try Treemap, which implements the SortedMap interface and sorts it based on natural ordering.
+* It's roughly the same as hash table except that it's unsynchronized and permits nulls (both null value and null key)
+* Keys and values are meant to be randomized. If you care about values being sorted, try Treemap, which implements the SortedMap interface and sorts it based on natural ordering.
 
 
 ## Helpful links
