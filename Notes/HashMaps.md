@@ -1,12 +1,20 @@
-# What to know about Java Hash Maps
+# What to know about Java hash maps
 
-## Initialization
+## Instantiation
 
-HashMap`<K,V`> hm = new HashMap`<K,V`>();
+HashMap`<K,V`> map = new HashMap`<K,V`>();
 
-where K and V are generics
+..where K and V are generics.
+For the rest of the md, were going to assume that we have a hash map called "map"
 
-## Most common functions
+## Most common functions, plucked from the [docs](https://docs.oracle.com/javase/8/docs/api/java/util/HashMap.html)
+
+| Function | Returns |
+| --- | --- |
+| map.size() | returns how many key value entries/mappings there are |
+| map.put(whatev,whatev) | puts that shit into the hashmap as a key value pair |
+| map.putAll(map2) | copies everything from map2 into map |
+
 
 
 
@@ -42,4 +50,4 @@ for(Map.Entry<Integer, Integer> entry: map.entrySet()){
 
 
 ## Helpful links
-1. [Difference between HashMap, TreeMap, and Linked HashMap](http://stackoverflow.com/a/17708526)
+* [Difference between HashMap, TreeMap, and Linked HashMap](http://stackoverflow.com/a/17708526)
