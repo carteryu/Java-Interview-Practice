@@ -9,11 +9,13 @@ For the rest of the md, were going to assume that we have a hash map called "map
 
 ## Most common functions, plucked from the [docs](https://docs.oracle.com/javase/8/docs/api/java/util/HashMap.html)
 
-| Function | Returns |
+| Function | What it does |
 | --- | --- |
 | map.size() | returns how many key value entries/mappings there are |
 | map.put(whatev,whatev) | puts that shit into the hashmap as a key value pair |
 | map.putAll(map2) | copies everything from map2 into map |
+| map.isEmpty() | duh! |
+| 
 
 
 
@@ -21,11 +23,12 @@ For the rest of the md, were going to assume that we have a hash map called "map
 
 
 ## Useful Examples
+Just for simplicity's sake lets assume we have a hashmap that maps an int to an int as such:
+`HashMap<Integer, Integer> map = new HashMap<Integer, Integer>();`
 
 * From a populated integer array called arr, map all the elements to its frequency:
 
 ```
-HashMap<Integer, Integer> map = new HashMap<Integer, Integer>();
 for(int num: arr){
     if(map.containsKey(num)){
         map.put(num, map.get(num)+1);
@@ -34,6 +37,15 @@ for(int num: arr){
     }
 }
 ```
+
+* Print out all the key value pairs in a hash map
+```
+for (int key: map.keySet()) {
+    System.out.println("key : " + key)
+    System.out.println("value : " + map.get(key));
+}
+```
+
 * Iterate over a HashMap to find the largest integer value
 
 ```
@@ -42,6 +54,8 @@ for(Map.Entry<Integer, Integer> entry: map.entrySet()){
     max = Math.max(max, entry.getValue());
 }
 ```
+
+
 
 ## Random trivia
 
